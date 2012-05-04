@@ -11,12 +11,16 @@ echo "Now configuring, compiling, and installing lc3tools..."
 cd lc3tools
 ./configure
 make install
+make clean
+make clear
 
 echo
 echo "Now configuring, compiling, and installing lcc-lc3..."
 cd ../lcc-lc3
 ./configure
 make install
+make clean
+make clear
 
 echo
 echo "All done. Now you can add $HOME/.lc3 to your PATH if you wish."
