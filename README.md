@@ -17,7 +17,7 @@ wget -qO- https://raw.github.com/haplesshero13/lc3platform/master/install.sh | s
 
 ###On Mac OS X using curl
 * Install Xcode and the Xcode Developer Tools/Command Line Tools
-* Check that you have gcc by typing gcc --version. If you get a message similar to i686-apple-darwin11-llvm-gcc-4.2 (GCC) 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.9.00) then you are all set.
+* Check that you have gcc by typing `gcc --version`. If you get a message similar to `i686-apple-darwin11-llvm-gcc-4.2 (GCC) 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.9.00)` then you are all set.
 * Open Terminal.app and run:
 
 ```
@@ -25,3 +25,7 @@ curl https://raw.github.com/haplesshero13/lc3platform/master/install.sh | sh -
 ```
 
 That's it. Enjoy!
+
+...assuming you trust the install script, that is! =]
+
+If not, go ahead and look at the build and install instructions on each of the subcomponents.
