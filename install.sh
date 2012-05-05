@@ -22,6 +22,8 @@ make install
 make clean
 make clear
 
+rm -rf lc3tools
+rm -rf lcc-lc3
+
 echo
 echo "All done. Now you can add $HOME/.lc3 to your PATH."
-echo "You may also remove the source directories, lc3tools and lcc-lc3, if you wish."
