@@ -22,6 +22,7 @@ make install
 make clean
 make clear
 
+cd ..
 rm -rf lc3tools
 rm -rf lcc-lc3
 
