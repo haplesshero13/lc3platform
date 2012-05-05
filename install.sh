@@ -1,4 +1,11 @@
 #!/bin/sh
+# LC3 Development Platform install script
+# by Avery Yen <haplesshero13@gmail.com>
+# May 5, 2012
+# Downloads source for lc3tools and the lcc-lc3 compiler, builds, installs, and
+#  adds to PATH. Default install directory is at ~/.lc3.
+#
+# Requires git to run.
 
 set -e
 
@@ -47,4 +54,4 @@ else
   echo "(You may have to restart your shell session for this change to take effect.)"
 fi
 
-echo "Finished installing the LC3 Developer Platform!"
+echo "Finished installing the LC3 Development Platform!"
