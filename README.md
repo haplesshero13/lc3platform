@@ -1,4 +1,4 @@
-#LC3 Platform
+#LC3 Development Platform
 
 A nice downloader and install script for the LC3 tools required for Dartmouth College COSC 51, Computer Architecture.
 
