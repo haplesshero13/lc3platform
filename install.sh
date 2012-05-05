@@ -9,12 +9,12 @@
 
 set -e
 
-echo "Cloning git repositories into place:"
+echo "Cloning git repositories into place..."
 git clone git://github.com/haplesshero13/lc3tools.git
 git clone git://github.com/haplesshero13/lcc-lc3.git
 
 echo
-echo "Now configuring, compiling, and installing lc3tools..."
+echo "Configuring, compiling, and installing lc3tools..."
 cd lc3tools
 ./configure
 make install
@@ -22,7 +22,7 @@ make clean
 make clear
 
 echo
-echo "Now configuring, compiling, and installing lcc-lc3..."
+echo "Configuring, compiling, and installing lcc-lc3..."
 cd ../lcc-lc3
 ./configure
 make install
@@ -37,6 +37,7 @@ rm -rf lcc-lc3
 
 echo "Adding LC3 Platform binaries to PATH environment variable..."
 LC3_PATH="$HOME/\.lc3"
+
 if [[ "$PATH" =~ $LC3_PATH ]]; then
   echo "Path already contains \"$HOME/.lc3\"."
 else
@@ -45,7 +46,6 @@ else
     echo 'export PATH="$HOME/.lc3:$PATH"' >> ~/.zshrc
     echo "Added $HOME/.lc3 to your PATH in your zshrc."
   fi
-
   if [[ "$SHELL" =~ .*bash ]]; then
     echo "# LC3 Tools" >> ~/.bash_profile
     echo 'export PATH="$HOME/.lc3:$PATH"' >> ~/.bash_profile
