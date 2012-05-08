@@ -69,3 +69,6 @@ The `lc3tools` includes a simulator for the LC3, as well as an assembler and a b
 The `lcc-lc3` C compiler is an updated version of LCC for LC3, originally by Ajay Ladsaria and Sanjay J. Patel, that includes Prof. Sean Smith's `no-sse` fix, and that installs to `~/.lc3` by default. More details are at the [lcc-lc3 compiler GitHub page](https://github.com/haplesshero13/lcc-lc3).
 
 Finally, the script checks if `~/.lc3` is in your path. If it isn't, and you use bash or zsh, it will add the line `export PATH="$HOME/.lc3:$PATH"` to your `.bash_profile` or your `.zshrc`, depending on which shell it detects. If you use any other shell, you probably know how to add `~/.lc3` to your path already, but I don't. ;)
+
+## Author
+This script and the directions in the README here are written and maintained by Avery Yen (gmail: haplesshero13). Direct any complaints, bug reports, and funny stories to him. The associated projects, [lc3tools](https://github.com/haplesshero13/lc3tools) and [lcc-lc3 compiler](https://github.com/haplesshero13/lcc-lc3), are also being maintained by Avery. See those project pages for more details.
