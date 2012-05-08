@@ -9,6 +9,7 @@
 
 set -e
 
+cd
 echo "Cloning git repositories into place..."
 git clone git://github.com/haplesshero13/lc3tools.git
 git clone git://github.com/haplesshero13/lcc-lc3.git
@@ -18,8 +19,7 @@ echo "Configuring, compiling, and installing lc3tools..."
 cd lc3tools
 ./configure
 make install
-#make clean
-#make clear
+make clean
 
 echo
 echo "Configuring, compiling, and installing lcc-lc3..."
@@ -27,14 +27,8 @@ cd ../lcc-lc3
 git checkout no-sse
 ./configure
 make install
-#make clean
-#make clear
+make clean
 echo "Binaries compiled and installed."
-
-echo "Removing downloaded source files..."
-cd ..
-rm -rf lc3tools
-rm -rf lcc-lc3
 
 echo "Adding LC3 Platform binaries to PATH environment variable..."
 LC3_PATH="$HOME/\.lc3"
