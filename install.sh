@@ -20,14 +20,15 @@ cd .lc3tools
 ./configure
 make install
 make clean
+make clear
 
 echo
 echo "Configuring, compiling, and installing lcc-lc3..."
 cd ../.lcc-lc3
-git checkout no-sse
 ./configure
 make install
 make clean
+make clear
 echo "Binaries compiled and installed."
 
 echo "Adding LC3 Platform binaries to PATH environment variable..."
