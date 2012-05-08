@@ -11,19 +11,19 @@ set -e
 
 cd
 echo "Cloning git repositories into place..."
-git clone git://github.com/haplesshero13/lc3tools.git
-git clone git://github.com/haplesshero13/lcc-lc3.git
+git clone git://github.com/haplesshero13/lc3tools.git .lc3tools
+git clone git://github.com/haplesshero13/lcc-lc3.git .lcc-lc3
 
 echo
 echo "Configuring, compiling, and installing lc3tools..."
-cd lc3tools
+cd .lc3tools
 ./configure
 make install
 make clean
 
 echo
 echo "Configuring, compiling, and installing lcc-lc3..."
-cd ../lcc-lc3
+cd ../.lcc-lc3
 git checkout no-sse
 ./configure
 make install
