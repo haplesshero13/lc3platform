@@ -27,9 +27,11 @@ curl https://raw.github.com/haplesshero13/lc3platform/master/install.sh | sh -
 
 ###Start Playing with the LC3
 
-If you got the message: "Finished installing the LC3 Development Platform!" then you are good to go. If not, see what the last error was before the script quit. Restart your shell and try to run `lcc` and `lc3sim-tk`. You should get a help message with the `lcc` command and you should get an LC3 simulation window with `lc3sim-tk`.
+If you got the message: "Finished installing the LC3 Development Platform!" then you are good to go. (If not, see what the last error was before the script quit.)
 
-If it doesn't work, make sure you either close the Terminal and open it again, or log out and log in again. Check to see if you have ` $HOME/.lc3` in your path by running `echo $PATH`. (`$HOME` will be expanded to whatever your home directory is.)
+Now, restart your shell and try to run `lcc` and `lc3sim-tk`. You should get a help message with the `lcc` command and you should get an LC3 simulation window with `lc3sim-tk`.
+
+If it doesn't work, make sure you either close the Terminal and open it again, or log out and log in again. Check to see if you have `$HOME/.lc3` in your path by running `echo $PATH`. (You won't see "`$HOME`"; it will be expanded to whatever your home directory is.)
 
 That's it. Enjoy!
 
