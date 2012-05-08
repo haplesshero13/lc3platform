@@ -7,8 +7,9 @@ Installs the [lc3tools](https://github.com/haplesshero13/lc3tools) and [lcc-lc3 
 ## Installation Instructions
 
 
-### On Linux or Windows+Cygwin using wget
-* Install prerequisites: standard UNIX tools including wget or curl, as well as uname, rm, cp, mkdir, and chmod; gcc, wish, flex, and Git
+### On Linux (or Windows+Cygwin) using wget
+* Install prerequisites: standard UNIX tools should come with Linux/Cygwin including wget or curl, as well as uname, rm, cp, mkdir, and chmod (but check anyway). Then, install gcc, wish, flex, and git.
+* If you have lots of trouble using Cygwin on Windows, you may consider Linux in a VirtualBox or dual booting with Windows. It's free!
 * At the terminal/shell, run:
 
 ```
@@ -16,8 +17,9 @@ wget -qO- https://raw.github.com/haplesshero13/lc3platform/master/install.sh | s
 ```
 
 ###On Mac OS X using curl
-####Check if you already have Xcode (Any Mac OS X)
-If you already have Xcode, check that you have gcc.
+The only prerequisite you need to install on Mac OS X is gcc. The complication arises because Apple is trying to move away from gcc in their latest Mac OS and Xcode. But there is still hope!
+
+####Check if you already have gcc (Any Mac OS X)
 
 * Check that you have Xcode and gcc by typing `gcc --version`. If you get a message similar to the following, then you are all set.
 
@@ -25,14 +27,14 @@ If you already have Xcode, check that you have gcc.
 i686-apple-darwin11-llvm-gcc-4.2 (GCC) 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.9.00)
 ```
 
-* Skip to "Get the LC3 Developer Platform" if you already have gcc. If not, install the Command Line Tools for your version of Xcode. Or else, get Xcode 4.3.
+* Skip to [Get the LC3 Developer Platform](#get-the-lc3-developer-platform) if you already have gcc. If not, you can try to install the Command Line Tools for your version of Xcode. Or, you can get Xcode 4.3.
 
 ####Get Xcode 4.3 (Mac OS X 10.6+)
 If you don't have Xcode yet, then follow these instructions.
 
 * Install Xcode 4.3 (free with Apple/iTunes ID) using the Apple App Store (warning: this is a huge download; you may wish to prepare some popcorn) and download the Command Line Tools in addition: go to Xcode&rarr;Preferences&rarr;Downloads, find Command Line Tools, and click install.
-* Run `sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer` and enter your password (You won't see anything on the screen when you type your password. This is a privacy feature.)
-* Check that you have Xcode and gcc by typing `gcc --version`. If you get a message similar to the following, then you are all set.
+* Run `sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer` and enter your password (You won't see anything on the screen when you type your password. This is a privacy feature.) (You can skip this step if you already have old Xcode or GCC. Check using `gcc --version` like below.)
+* Check that you have gcc by typing `gcc --version`. If you get a message similar to the following, then you are all set.
 
 ```
 i686-apple-darwin11-llvm-gcc-4.2 (GCC) 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.9.00)
