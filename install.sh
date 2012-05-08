@@ -24,6 +24,7 @@ make clear
 echo
 echo "Configuring, compiling, and installing lcc-lc3..."
 cd ../lcc-lc3
+git checkout no-sse
 ./configure
 make install
 make clean
