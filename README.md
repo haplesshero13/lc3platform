@@ -7,7 +7,7 @@ Installs the [lc3tools](https://github.com/haplesshero13/lc3tools) and [lcc-lc3 
 ## Installation Instructions
 
 
-### On Linux (or Windows+Cygwin) using wget
+### On Linux 32-bit (or Windows+Cygwin) using wget
 * Install prerequisites: standard UNIX tools should come with Linux/Cygwin including wget or curl, as well as uname, rm, cp, mkdir, and chmod (but check anyway). Then, install gcc, wish, flex, and git.
 * If you have lots of trouble using Cygwin on Windows, you may consider Linux in a VirtualBox or dual booting with Windows. It's free!
 * At the terminal/shell, run:
