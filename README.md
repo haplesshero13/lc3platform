@@ -15,11 +15,31 @@ Installs the [lc3tools](https://github.com/haplesshero13/lc3tools) and [lcc-lc3 
 wget -qO- https://raw.github.com/haplesshero13/lc3platform/master/install.sh | sh -
 ```
 
-###On Mac OS X (10.6+) using curl
+###On Mac OS X using curl
+####Check if you already have Xcode (Any Mac OS X)
+If you already have Xcode, check that you have gcc.
+
+* Check that you have Xcode and gcc by typing `gcc --version`. If you get a message similar to the following, then you are all set.
+
+```
+i686-apple-darwin11-llvm-gcc-4.2 (GCC) 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.9.00)
+```
+
+* Skip to "Get the LC3 Developer Platform" if you already have gcc. If not, install the Command Line Tools for your version of Xcode. Or else, get Xcode 4.3.
+
+####Get Xcode 4.3 (Mac OS X 10.6+)
+If you don't have Xcode yet, then follow these instructions.
+
 * Install Xcode 4.3 (free with Apple/iTunes ID) using the Apple App Store (warning: this is a huge download; you may wish to prepare some popcorn) and download the Command Line Tools in addition: go to Xcode&rarr;Preferences&rarr;Downloads, find Command Line Tools, and click install.
 * Run `sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer` and enter your password (You won't see anything on the screen when you type your password. This is a privacy feature.)
-* Check that you have gcc by typing `gcc --version`. If you get a message similar to `i686-apple-darwin11-llvm-gcc-4.2 (GCC) 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.9.00)` then you are all set.
-* Open Terminal.app and run:
+* Check that you have Xcode and gcc by typing `gcc --version`. If you get a message similar to the following, then you are all set.
+
+```
+i686-apple-darwin11-llvm-gcc-4.2 (GCC) 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.9.00)
+```
+
+####Get the LC3 Developer Platform
+Open Terminal.app and run:
 
 ```
 curl https://raw.github.com/haplesshero13/lc3platform/master/install.sh | sh -
