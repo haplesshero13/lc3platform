@@ -72,7 +72,7 @@ Finally, the script checks if `~/.lc3` is in your path. If it isn't, and you use
 
 ## Known Issues
 
-Currently, the LC3 Developer Platform doesn't compile and link properly on 64-bit Linux, even given 32-bit libs. The maintainer suggests a 32-bit Linux install in a VirtualBox, for now.
+Currently, the LC3 Developer Platform doesn't compile and link properly on 64-bit Linux, even given 32-bit libs.
 
 ## Author
 This script and the directions in the README here are written and maintained by Avery Yen (gmail: haplesshero13). Direct any complaints, bug reports, and funny stories to him. The associated projects, [lc3tools](https://github.com/haplesshero13/lc3tools) and [lcc-lc3 compiler](https://github.com/haplesshero13/lcc-lc3), are also being maintained by Avery. See those project pages for more details.
