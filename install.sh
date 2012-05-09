@@ -43,9 +43,9 @@ else
     echo "Added $HOME/.lc3 to your PATH in your zshrc."
   fi
   if [ `echo "$SHELL" | grep bash` ]; then
-    echo "# LC3 Tools" >> ~/.bash_profile
-    echo 'export PATH="$HOME/.lc3:$PATH"' >> ~/.bash_profile
-    echo "Added $HOME/.lc3 to your PATH in your bash_profile."
+    echo "# LC3 Tools" >> ~/.bashrc
+    echo 'export PATH="$HOME/.lc3:$PATH"' >> ~/.bashrc
+    echo "Added $HOME/.lc3 to your PATH in your bashrc."
   fi
   echo "(You may have to restart your shell session for this change to take effect.)"
 fi
