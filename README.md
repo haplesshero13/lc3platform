@@ -7,8 +7,8 @@ Installs the [lc3tools](https://github.com/haplesshero13/lc3tools) and [lcc-lc3 
 ## Installation Instructions
 Note: if an instruction is preceded by a dollar sign and a space ($ ), it means "type this into a terminal and press return, but omit the dollar sign and space." Example: `$ ls` means type "ls" at a terminal/shell and hit return.
 
-### On Linux 32-bit using wget
-* Install prerequisites: standard UNIX tools should come with Linux and possibly Cygwin including uuname, rm, cp, mkdir, and chmod.
+### On Linux 32-bit (and possibly Windows+Cygwin) using wget
+* Install prerequisites: standard UNIX tools should come with Linux and possibly Cygwin including uname, rm, cp, mkdir, and chmod.
 * Then, install gcc, wish, flex, and git, and additional libraries. On a modern Ubuntu system, this looks like:
 
 ```
