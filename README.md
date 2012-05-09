@@ -5,15 +5,21 @@ A nice downloader and install script for the LC3 tools required for developing f
 Installs the [lc3tools](https://github.com/haplesshero13/lc3tools) and [lcc-lc3 compiler](https://github.com/haplesshero13/lcc-lc3) to `~/.lc3`.
 
 ## Installation Instructions
+Note: if an instruction is preceded by a dollar sign and a space ($ ), it means "type this into a terminal and press return, but omit the dollar sign and space." Example: `$ ls` means type "ls" at a terminal/shell and hit return.
 
+### On Linux 32-bit using wget
+* Install prerequisites: standard UNIX tools should come with Linux and possibly Cygwin including uuname, rm, cp, mkdir, and chmod.
+* Then, install gcc, wish, flex, and git, and additional libraries. On a modern Ubuntu system, this looks like:
 
-### On Linux 32-bit (or Windows+Cygwin) using wget
-* Install prerequisites: standard UNIX tools should come with Linux/Cygwin including wget or curl, as well as uname, rm, cp, mkdir, and chmod (but check anyway). Then, install gcc, wish, flex, and git.
+```
+$ sudo apt-get update
+$ sudo apt-get install git gcc wget tk8.5 flex libncurses5-dev libreadline6-dev
+```
 * If you have lots of trouble using Cygwin on Windows, you may consider Linux in a VirtualBox or dual booting with Windows. It's free!
 * At the terminal/shell, run:
 
 ```
-wget -qO- https://raw.github.com/haplesshero13/lc3platform/master/install.sh | sh -
+$ wget -qO- https://raw.github.com/haplesshero13/lc3platform/master/install.sh | sh -
 ```
 
 ###On Mac OS X using curl
@@ -33,8 +39,8 @@ i686-apple-darwin11-llvm-gcc-4.2 (GCC) 4.2.1 (Based on Apple Inc. build 5658) (L
 If you don't have Xcode yet, then follow these instructions.
 
 * Install Xcode 4.3 (free with Apple/iTunes ID) using the Apple App Store (warning: this is a huge download; you may wish to prepare some popcorn) and download the Command Line Tools in addition: go to Xcode&rarr;Preferences&rarr;Downloads, find Command Line Tools, and click install.
-* Run `sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer` and enter your password (You won't see anything on the screen when you type your password. This is a privacy feature.) (You can skip this step if you already have old Xcode or GCC. Check using `gcc --version` like below.)
-* Check that you have gcc by typing `gcc --version`. If you get a message similar to the following, then you are all set.
+* Run `$ sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer` and enter your password (You won't see anything on the screen when you type your password. This is a privacy feature.) (You can skip this step if you already have old Xcode or GCC. Check using `gcc --version` like below.)
+* Check that you have gcc by typing `$ gcc --version`. If you get a message similar to the following, then you are all set.
 
 ```
 i686-apple-darwin11-llvm-gcc-4.2 (GCC) 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.9.00)
@@ -44,14 +50,14 @@ i686-apple-darwin11-llvm-gcc-4.2 (GCC) 4.2.1 (Based on Apple Inc. build 5658) (L
 Open Terminal.app and run:
 
 ```
-curl https://raw.github.com/haplesshero13/lc3platform/master/install.sh | sh -
+$ curl https://raw.github.com/haplesshero13/lc3platform/master/install.sh | sh -
 ```
 
 ###Start Playing with the LC3
 
 If you got the message: "Finished installing the LC3 Development Platform!" then you are good to go. (If not, see what the last error was before the script quit.)
 
-Now, restart your shell and try to run `lcc` and `lc3sim-tk`. You should get a help message with the `lcc` command and you should get an LC3 simulation window with `lc3sim-tk`.
+Now, restart your shell and try to run `$ lcc` and `$ lc3sim-tk`. You should get a help message with the `lcc` command and you should get an LC3 simulation window with `lc3sim-tk`.
 
 If it doesn't work, make sure you either close the Terminal and open it again, or log out and log in again. Check to see if you have `$HOME/.lc3` in your path by running `echo $PATH`. (You won't see "`$HOME`"; it will be expanded to whatever your home directory is.)
 
@@ -72,7 +78,7 @@ Finally, the script checks if `~/.lc3` is in your path. If it isn't, and you use
 
 ## Known Issues
 
-Currently, the LC3 Developer Platform doesn't compile and link properly on 64-bit Linux, even given 32-bit libs.
+Currently, the LC3 Developer Platform doesn't compile and link properly on 64-bit Linux, even given 32-bit libs. For now, use 32-bit Linux if possible.
 
 ## Author
 This script and the directions in the README here are written and maintained by Avery Yen (gmail: haplesshero13). Direct any complaints, bug reports, and funny stories to him. The associated projects, [lc3tools](https://github.com/haplesshero13/lc3tools) and [lcc-lc3 compiler](https://github.com/haplesshero13/lcc-lc3), are also being maintained by Avery. See those project pages for more details.
