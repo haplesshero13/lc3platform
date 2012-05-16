@@ -85,6 +85,8 @@ This script and the directions in the README here are written and maintained by 
 
 ## License
 
+(This license applies only to the install script. The submodules of this project are under their own licenses.)
+
 Copyright (c) 2012 Avery Yen
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
