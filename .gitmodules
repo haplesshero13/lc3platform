@@ -1,0 +1,6 @@
+[submodule "lc3tools"]
+	path = lc3tools
+	url = git://github.com/haplesshero13/lc3tools.git
+[submodule "lcc-lc3"]
+	path = lcc-lc3
+	url = git://github.com/haplesshero13/lcc-lc3.git
